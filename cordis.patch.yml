@@ -1,0 +1,20 @@
+- insert:
+    - id: gpustack
+      name: dsh-plugin-gpustack
+      config:
+        baseUrl: ''
+        apiKeyEnv: GPUSTACK_API_KEY
+        organizationId: ''
+        secretsBackend: auto
+        timeoutMs: 60000
+        maxResponseBytes: 8388608
+        allowWrites: true
+        permissions:
+          deploy: true
+          update: true
+          restart: true
+          delete: true
+          raw: true
+          inference: true
+        audit: true
+        debug: false

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="GPUStack cluster">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#14304a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <g fill="none" stroke="#5eead4" stroke-width="2.2" stroke-linejoin="round">
+    <rect x="12" y="38" width="40" height="9" rx="3" opacity="0.55"/>
+    <rect x="12" y="27" width="40" height="9" rx="3" opacity="0.8"/>
+    <rect x="12" y="16" width="40" height="9" rx="3"/>
+  </g>
+  <rect x="24" y="18.5" width="16" height="4" rx="1.2" fill="#5eead4" opacity="0.9"/>
+  <g stroke="#5eead4" stroke-width="1.6" opacity="0.6" stroke-linecap="round">
+    <path d="M18 47v4"/>
+    <path d="M26 47v4"/>
+    <path d="M34 47v4"/>
+    <path d="M42 47v4"/>
+    <path d="M50 47v4"/>
+  </g>
+</svg>

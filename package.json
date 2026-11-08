@@ -1,0 +1,65 @@
+{
+  "name": "dsh-plugin-gpustack",
+  "version": "1.0.0",
+  "description": "GPUStack v2 集群工具：模型部署与生命周期、Worker/GPU 盘点、实例日志、推理验收、用量统计与通用 API 调用；API Key 留在模型之外。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client/index.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client/**/*.js",
+    "lib/**/*.js",
+    "scripts/*.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "scripts": {
+    "test": "node tests/run.mjs"
+  },
+  "license": "MIT",
+  "author": "Hu Zhang (https://github.com/zh-Littlebird)",
+  "homepage": "https://github.com/zh-Littlebird/dsh-plugin-gpustack#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zh-Littlebird/dsh-plugin-gpustack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zh-Littlebird/dsh-plugin-gpustack/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "gpustack",
+    "gpu",
+    "llm-ops"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0 <5.0.0"
+  }
+}

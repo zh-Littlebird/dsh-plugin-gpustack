@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "GPUStack cluster",
+    "description": "Operate a GPUStack cluster: inventory, model deployment and lifecycle, instance logs, readiness, inference checks, usage, and arbitrary endpoints."
+  }
+}
