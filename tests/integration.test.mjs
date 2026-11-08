@@ -64,8 +64,8 @@ try {
   assert.equal(inventory.gpus[0].memoryGb, 64)
   assert.equal(inventory.gpus[0].memoryUsedGb, 8)
   assert.equal(inventory.gpus[0].utilization, 12.5)
-  assert.equal(inventory.gpus[0].name, '910B3')
-  assert.match(render(tools, 'gpustack_inventory', {}, inventory), /910B3/)
+  assert.equal(inventory.gpus[0].name, 'A100-80GB')
+  assert.match(render(tools, 'gpustack_inventory', {}, inventory), /A100-80GB/)
 
   // --- models: list and detail ----------------------------------------------
   const list = await call(tools, 'gpustack_models', {})
